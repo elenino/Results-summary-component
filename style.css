@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 100ms;
+}
+
+body{
+
+    font-family: 'Hanken Grotesk', sans-serif;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.Result_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 2rem 3rem;
+}
+
+.Result_Container h5{
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+}
+
+.Result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    margin: 1rem;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    
+}
+
+.Result h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.Result span{
+    color: hsl(241, 100%, 89%);
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.feedback{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: hsl(221, 100%, 96%);
+}
+
+.feedback-description{
+    text-align: center;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+
+.attribution{
+  text-align: center;
+  padding-block: 1rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(241, 100%, 89%);
+  font-size: 16px;
+}
+
+.attribution a{
+    color: hsl(241, 100%, 89%);
+}
+
+.description{
+    display: flex;
+    flex: 3;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 1px 10px 20px hsla(224, 30%, 27%, .3);
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+}
+
+.description h1{
+    font-size: 1rem;
+    color: hsl(224, 30%, 27%);
+}
+
+.item1{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.item2{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.item3{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.item4{
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+.head-holder{
+    display: flex;
+    gap: 1rem;
+}
+
+.item-name{
+    font-size: 0.9rem;
+}
+
+.total-score{
+    font-weight: bolder;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.score{
+ color: hsl(224, 30%, 27%);
+}
+
+.button{
+    color: hsl(221, 100%, 96%);
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 30px;
+    text-align: center;
+    padding-block: 1rem;
+    font-weight: 500;
+}
+
+.button:hover, .button:active{
+    background-color: hsl(224, 30%, 27%);
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (min-width: 600px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
+    .card{
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: clamp(650px, 60%, 700px);
+    }
+
+    .Result_Container{
+        border-radius: 30px;
+        flex: 2;
+        z-index: 1;
+        transform: translateX(3%);
+        justify-content: space-around;
+    }
+    
+    .description{
+        flex: 3;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: 1px 10px 20px hsla(224, 30%, 27%, .3);;
+    }
+}
